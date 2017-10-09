@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C1FB4521F8B18D900B3CD0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FB4511F8B18D900B3CD0E /* AppDelegate.m */; };
+		2C1FB4551F8B18D900B3CD0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FB4541F8B18D900B3CD0E /* ViewController.m */; };
+		2C1FB4581F8B18D900B3CD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1FB4561F8B18D900B3CD0E /* Main.storyboard */; };
+		2C1FB45A1F8B18D900B3CD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1FB4591F8B18D900B3CD0E /* Assets.xcassets */; };
+		2C1FB45D1F8B18D900B3CD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1FB45B1F8B18D900B3CD0E /* LaunchScreen.storyboard */; };
+		2C1FB4601F8B18DA00B3CD0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FB45F1F8B18DA00B3CD0E /* main.m */; };
+		2C1FB46A1F8B18DA00B3CD0E /* DocDreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FB4691F8B18DA00B3CD0E /* DocDreamTests.m */; };
+		2C1FB4751F8B18DA00B3CD0E /* DocDreamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FB4741F8B18DA00B3CD0E /* DocDreamUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C1FB4661F8B18DA00B3CD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1FB4451F8B18D900B3CD0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1FB44C1F8B18D900B3CD0E;
+			remoteInfo = DocDream;
+		};
+		2C1FB4711F8B18DA00B3CD0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1FB4451F8B18D900B3CD0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1FB44C1F8B18D900B3CD0E;
+			remoteInfo = DocDream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C1FB44D1F8B18D900B3CD0E /* DocDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1FB4501F8B18D900B3CD0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C1FB4511F8B18D900B3CD0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C1FB4531F8B18D900B3CD0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C1FB4541F8B18D900B3CD0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C1FB4571F8B18D900B3CD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C1FB4591F8B18D900B3CD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C1FB45C1F8B18D900B3CD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C1FB45E1F8B18DA00B3CD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1FB45F1F8B18DA00B3CD0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C1FB4651F8B18DA00B3CD0E /* DocDreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocDreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1FB4691F8B18DA00B3CD0E /* DocDreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocDreamTests.m; sourceTree = "<group>"; };
+		2C1FB46B1F8B18DA00B3CD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1FB4701F8B18DA00B3CD0E /* DocDreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocDreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1FB4741F8B18DA00B3CD0E /* DocDreamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocDreamUITests.m; sourceTree = "<group>"; };
+		2C1FB4761F8B18DA00B3CD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C1FB44A1F8B18D900B3CD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1FB4621F8B18DA00B3CD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1FB46D1F8B18DA00B3CD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C1FB4441F8B18D900B3CD0E = {
+			isa = PBXGroup;
+			children = (
+				2C1FB44F1F8B18D900B3CD0E /* DocDream */,
+				2C1FB4681F8B18DA00B3CD0E /* DocDreamTests */,
+				2C1FB4731F8B18DA00B3CD0E /* DocDreamUITests */,
+				2C1FB44E1F8B18D900B3CD0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C1FB44E1F8B18D900B3CD0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C1FB44D1F8B18D900B3CD0E /* DocDream.app */,
+				2C1FB4651F8B18DA00B3CD0E /* DocDreamTests.xctest */,
+				2C1FB4701F8B18DA00B3CD0E /* DocDreamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C1FB44F1F8B18D900B3CD0E /* DocDream */ = {
+			isa = PBXGroup;
+			children = (
+				2C1FB4501F8B18D900B3CD0E /* AppDelegate.h */,
+				2C1FB4511F8B18D900B3CD0E /* AppDelegate.m */,
+				2C1FB4531F8B18D900B3CD0E /* ViewController.h */,
+				2C1FB4541F8B18D900B3CD0E /* ViewController.m */,
+				2C1FB4561F8B18D900B3CD0E /* Main.storyboard */,
+				2C1FB4591F8B18D900B3CD0E /* Assets.xcassets */,
+				2C1FB45B1F8B18D900B3CD0E /* LaunchScreen.storyboard */,
+				2C1FB45E1F8B18DA00B3CD0E /* Info.plist */,
+				2C1FB45F1F8B18DA00B3CD0E /* main.m */,
+			);
+			path = DocDream;
+			sourceTree = "<group>";
+		};
+		2C1FB4681F8B18DA00B3CD0E /* DocDreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C1FB4691F8B18DA00B3CD0E /* DocDreamTests.m */,
+				2C1FB46B1F8B18DA00B3CD0E /* Info.plist */,
+			);
+			path = DocDreamTests;
+			sourceTree = "<group>";
+		};
+		2C1FB4731F8B18DA00B3CD0E /* DocDreamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C1FB4741F8B18DA00B3CD0E /* DocDreamUITests.m */,
+				2C1FB4761F8B18DA00B3CD0E /* Info.plist */,
+			);
+			path = DocDreamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C1FB44C1F8B18D900B3CD0E /* DocDream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1FB4791F8B18DA00B3CD0E /* Build configuration list for PBXNativeTarget "DocDream" */;
+			buildPhases = (
+				2C1FB4491F8B18D900B3CD0E /* Sources */,
+				2C1FB44A1F8B18D900B3CD0E /* Frameworks */,
+				2C1FB44B1F8B18D900B3CD0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocDream;
+			productName = DocDream;
+			productReference = 2C1FB44D1F8B18D900B3CD0E /* DocDream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C1FB4641F8B18DA00B3CD0E /* DocDreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1FB47C1F8B18DA00B3CD0E /* Build configuration list for PBXNativeTarget "DocDreamTests" */;
+			buildPhases = (
+				2C1FB4611F8B18DA00B3CD0E /* Sources */,
+				2C1FB4621F8B18DA00B3CD0E /* Frameworks */,
+				2C1FB4631F8B18DA00B3CD0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C1FB4671F8B18DA00B3CD0E /* PBXTargetDependency */,
+			);
+			name = DocDreamTests;
+			productName = DocDreamTests;
+			productReference = 2C1FB4651F8B18DA00B3CD0E /* DocDreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C1FB46F1F8B18DA00B3CD0E /* DocDreamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1FB47F1F8B18DA00B3CD0E /* Build configuration list for PBXNativeTarget "DocDreamUITests" */;
+			buildPhases = (
+				2C1FB46C1F8B18DA00B3CD0E /* Sources */,
+				2C1FB46D1F8B18DA00B3CD0E /* Frameworks */,
+				2C1FB46E1F8B18DA00B3CD0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C1FB4721F8B18DA00B3CD0E /* PBXTargetDependency */,
+			);
+			name = DocDreamUITests;
+			productName = DocDreamUITests;
+			productReference = 2C1FB4701F8B18DA00B3CD0E /* DocDreamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C1FB4451F8B18D900B3CD0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Allen;
+				TargetAttributes = {
+					2C1FB44C1F8B18D900B3CD0E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					2C1FB4641F8B18DA00B3CD0E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C1FB44C1F8B18D900B3CD0E;
+					};
+					2C1FB46F1F8B18DA00B3CD0E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C1FB44C1F8B18D900B3CD0E;
+					};
+				};
+			};
+			buildConfigurationList = 2C1FB4481F8B18D900B3CD0E /* Build configuration list for PBXProject "DocDream" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C1FB4441F8B18D900B3CD0E;
+			productRefGroup = 2C1FB44E1F8B18D900B3CD0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C1FB44C1F8B18D900B3CD0E /* DocDream */,
+				2C1FB4641F8B18DA00B3CD0E /* DocDreamTests */,
+				2C1FB46F1F8B18DA00B3CD0E /* DocDreamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C1FB44B1F8B18D900B3CD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1FB45D1F8B18D900B3CD0E /* LaunchScreen.storyboard in Resources */,
+				2C1FB45A1F8B18D900B3CD0E /* Assets.xcassets in Resources */,
+				2C1FB4581F8B18D900B3CD0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1FB4631F8B18DA00B3CD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1FB46E1F8B18DA00B3CD0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C1FB4491F8B18D900B3CD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1FB4551F8B18D900B3CD0E /* ViewController.m in Sources */,
+				2C1FB4601F8B18DA00B3CD0E /* main.m in Sources */,
+				2C1FB4521F8B18D900B3CD0E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1FB4611F8B18DA00B3CD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1FB46A1F8B18DA00B3CD0E /* DocDreamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1FB46C1F8B18DA00B3CD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1FB4751F8B18DA00B3CD0E /* DocDreamUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C1FB4671F8B18DA00B3CD0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C1FB44C1F8B18D900B3CD0E /* DocDream */;
+			targetProxy = 2C1FB4661F8B18DA00B3CD0E /* PBXContainerItemProxy */;
+		};
+		2C1FB4721F8B18DA00B3CD0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C1FB44C1F8B18D900B3CD0E /* DocDream */;
+			targetProxy = 2C1FB4711F8B18DA00B3CD0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C1FB4561F8B18D900B3CD0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1FB4571F8B18D900B3CD0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C1FB45B1F8B18D900B3CD0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1FB45C1F8B18D900B3CD0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C1FB4771F8B18DA00B3CD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C1FB4781F8B18DA00B3CD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C1FB47A1F8B18DA00B3CD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H83E67XW45;
+				INFOPLIST_FILE = DocDream/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.DocDream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C1FB47B1F8B18DA00B3CD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H83E67XW45;
+				INFOPLIST_FILE = DocDream/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.DocDream";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C1FB47D1F8B18DA00B3CD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H83E67XW45;
+				INFOPLIST_FILE = DocDreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.DocDreamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DocDream.app/DocDream";
+			};
+			name = Debug;
+		};
+		2C1FB47E1F8B18DA00B3CD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H83E67XW45;
+				INFOPLIST_FILE = DocDreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.DocDreamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DocDream.app/DocDream";
+			};
+			name = Release;
+		};
+		2C1FB4801F8B18DA00B3CD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H83E67XW45;
+				INFOPLIST_FILE = DocDreamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.DocDreamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DocDream;
+			};
+			name = Debug;
+		};
+		2C1FB4811F8B18DA00B3CD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H83E67XW45;
+				INFOPLIST_FILE = DocDreamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.DocDreamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DocDream;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C1FB4481F8B18D900B3CD0E /* Build configuration list for PBXProject "DocDream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1FB4771F8B18DA00B3CD0E /* Debug */,
+				2C1FB4781F8B18DA00B3CD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C1FB4791F8B18DA00B3CD0E /* Build configuration list for PBXNativeTarget "DocDream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1FB47A1F8B18DA00B3CD0E /* Debug */,
+				2C1FB47B1F8B18DA00B3CD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C1FB47C1F8B18DA00B3CD0E /* Build configuration list for PBXNativeTarget "DocDreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1FB47D1F8B18DA00B3CD0E /* Debug */,
+				2C1FB47E1F8B18DA00B3CD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C1FB47F1F8B18DA00B3CD0E /* Build configuration list for PBXNativeTarget "DocDreamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1FB4801F8B18DA00B3CD0E /* Debug */,
+				2C1FB4811F8B18DA00B3CD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C1FB4451F8B18D900B3CD0E /* Project object */;
+}
