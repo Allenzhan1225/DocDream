@@ -10,4 +10,5 @@
 @class MainModel;
 @interface MainDetailVC : UIViewController
 @property  (nonatomic,strong) MainModel * model;
+@property (nonatomic,assign) NSInteger doc_id;
 @end

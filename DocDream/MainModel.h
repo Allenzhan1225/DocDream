@@ -11,7 +11,7 @@
 @interface MainModel : JSONModel
 
     @property (nonatomic,strong) NSString <Optional>* content;
-    @property (nonatomic,assign) NSInteger  d_id;
+    @property (nonatomic,assign) NSInteger   d_id;
     @property (nonatomic,strong) NSString <Optional>* d_images;
     @property (nonatomic,assign) NSInteger ID;
     @property (nonatomic,strong) NSString <Optional>* u_image;

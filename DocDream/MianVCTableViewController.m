@@ -37,7 +37,9 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray * arr =  [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
         for (NSDictionary * dict in arr) {
-           MainModel * model =  [[MainModel alloc] initWithDictionary:dict error:nil];
+            NSError *  error;
+           MainModel * model =  [[MainModel alloc] initWithDictionary:dict error:&error];
+            NSLog(@"error = %@",error);
            [self.dataSource addObject:model];
         }
         NSLog(@"dataSource = %@",self.dataSource);
@@ -89,8 +91,10 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     MainModel * model = _dataSource[indexPath.row];
+    
     MainDetailVC * vc = [[MainDetailVC alloc] init];
     vc.model = model;
+    vc.doc_id = self.ID;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

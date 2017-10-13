@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MianVCTableViewController : UITableViewController
+//用户ID
+@property (nonatomic,assign) NSInteger ID;
 
 @end

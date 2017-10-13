@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AudioRecorderVC">
+            <connections>
+                <outlet property="audioBtn" destination="qOt-my-Ve3" id="VQi-bD-r6L"/>
+                <outlet property="audioPower" destination="9jD-C6-U9a" id="sbi-P0-lzq"/>
+                <outlet property="pause" destination="ojm-Ub-LIF" id="26T-bZ-oeU"/>
+                <outlet property="record" destination="oPe-xd-D3n" id="drQ-54-0MM"/>
+                <outlet property="resume" destination="ekX-Mu-zDL" id="vMg-FG-fVz"/>
+                <outlet property="stop" destination="pBd-bT-0au" id="6Ca-yb-FyT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="AudioRe">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9jD-C6-U9a">
+                    <rect key="frame" x="53" y="182" width="269" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="838-1u-GpD"/>
+                        <constraint firstAttribute="width" constant="269" id="bBy-7u-VDe"/>
+                    </constraints>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPe-xd-D3n">
+                    <rect key="frame" x="47" y="253" width="31" height="30"/>
+                    <state key="normal" title="开始"/>
+                    <connections>
+                        <action selector="recordClick:" destination="-1" eventType="touchUpInside" id="vhB-kH-PGY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojm-Ub-LIF">
+                    <rect key="frame" x="101" y="253" width="31" height="30"/>
+                    <state key="normal" title="暂停"/>
+                    <connections>
+                        <action selector="pauseClick:" destination="-1" eventType="touchUpInside" id="6EX-lQ-mfx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-Mu-zDL">
+                    <rect key="frame" x="160" y="253" width="31" height="30"/>
+                    <state key="normal" title="恢复"/>
+                    <connections>
+                        <action selector="resumeClick:" destination="-1" eventType="touchUpInside" id="cWN-u8-PpJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-bT-0au">
+                    <rect key="frame" x="295" y="253" width="31" height="30"/>
+                    <state key="normal" title="停止"/>
+                    <connections>
+                        <action selector="stopClick:" destination="-1" eventType="touchUpInside" id="2gg-gg-bJM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oey-rf-ceu">
+                    <rect key="frame" x="153" y="381" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="播放"/>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="60C-Js-tbZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8j-AM-nYD">
+                    <rect key="frame" x="55" y="381" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="上传"/>
+                    <connections>
+                        <action selector="uploadAudio:" destination="-1" eventType="touchUpInside" id="Qc9-v3-7dc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOt-my-Ve3">
+                    <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Q1a-Oh-OFA"/>
+                    </constraints>
+                    <state key="normal" title="录音"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qOt-my-Ve3" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="49P-ar-5jE"/>
+                <constraint firstItem="oPe-xd-D3n" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="47" id="6JE-DC-JkC"/>
+                <constraint firstItem="ekX-Mu-zDL" firstAttribute="leading" secondItem="ojm-Ub-LIF" secondAttribute="trailing" constant="28" id="9BO-3a-pep"/>
+                <constraint firstItem="9jD-C6-U9a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dq1-UG-gYQ"/>
+                <constraint firstItem="oPe-xd-D3n" firstAttribute="top" secondItem="9jD-C6-U9a" secondAttribute="bottom" constant="69" id="H7K-hx-UeB"/>
+                <constraint firstItem="ekX-Mu-zDL" firstAttribute="width" secondItem="oPe-xd-D3n" secondAttribute="width" id="HUL-wH-kXt"/>
+                <constraint firstItem="pBd-bT-0au" firstAttribute="width" secondItem="oPe-xd-D3n" secondAttribute="width" id="Iv5-ie-riy"/>
+                <constraint firstItem="qOt-my-Ve3" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="LbO-Cu-HNa"/>
+                <constraint firstItem="pBd-bT-0au" firstAttribute="top" secondItem="oPe-xd-D3n" secondAttribute="top" id="Pjb-pn-jhB"/>
+                <constraint firstItem="ekX-Mu-zDL" firstAttribute="height" secondItem="oPe-xd-D3n" secondAttribute="height" id="QAA-vD-3WD"/>
+                <constraint firstItem="pBd-bT-0au" firstAttribute="height" secondItem="oPe-xd-D3n" secondAttribute="height" id="Qcz-eW-AO3"/>
+                <constraint firstItem="ojm-Ub-LIF" firstAttribute="leading" secondItem="oPe-xd-D3n" secondAttribute="trailing" constant="23" id="Wp6-WU-wwk"/>
+                <constraint firstItem="ojm-Ub-LIF" firstAttribute="width" secondItem="oPe-xd-D3n" secondAttribute="width" id="dCV-fJ-qwp"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="pBd-bT-0au" secondAttribute="trailing" constant="49" id="e8W-lG-fAO"/>
+                <constraint firstItem="ojm-Ub-LIF" firstAttribute="leading" secondItem="oPe-xd-D3n" secondAttribute="trailing" constant="23" id="jcj-Qz-Oli"/>
+                <constraint firstItem="ojm-Ub-LIF" firstAttribute="top" secondItem="oPe-xd-D3n" secondAttribute="top" id="m4V-NR-FNi"/>
+                <constraint firstItem="9jD-C6-U9a" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="162" id="nwY-4F-8dt"/>
+                <constraint firstItem="ojm-Ub-LIF" firstAttribute="height" secondItem="oPe-xd-D3n" secondAttribute="height" id="pqg-cF-d5R"/>
+                <constraint firstItem="qOt-my-Ve3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="sVQ-TU-Hha"/>
+                <constraint firstItem="ekX-Mu-zDL" firstAttribute="top" secondItem="oPe-xd-D3n" secondAttribute="top" id="wHu-xB-0gp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

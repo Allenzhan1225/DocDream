@@ -24,7 +24,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    _headerimg.layer.cornerRadius = 30;
+    _headerimg.layer.cornerRadius = 25;
     _headerimg.layer.masksToBounds = YES;
     _docImg.layer.cornerRadius = 15;
     _docImg.layer.masksToBounds = YES;

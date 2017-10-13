@@ -14,8 +14,7 @@
 
 @implementation MainModel
 +(JSONKeyMapper*)keyMapper {
-    return [[JSONKeyMapper alloc] initWithDictionary:@{ @"ID": @"id" }];
+//    return [[JSONKeyMapper alloc] initWithDictionary:@{ @"ID": @"id" }];
+   return  [[JSONKeyMapper alloc] initWithModelToJSONDictionary:@{ @"ID": @"id" }];
 }
-
-
 @end
