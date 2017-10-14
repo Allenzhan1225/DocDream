@@ -42,13 +42,18 @@
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
     [self.myTableView registerNib:[UINib nibWithNibName:@"MainDetailCell" bundle:nil] forCellReuseIdentifier:@"MainDetailCell"];
-    [self loadData];
+//    [self loadData];
     [self creatFooterView];
     
     [self setAudioBtn];
 
     [self setAudioSession];
     
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self loadData];
 }
 
 
@@ -146,9 +151,9 @@
     // 开始
     [_audioBtn addTarget:self action:@selector(recordStart:) forControlEvents:UIControlEventTouchDown];
     // 取消
-    [_audioBtn addTarget:self action:@selector(recordCancel:) forControlEvents: UIControlEventTouchDragExit | UIControlEventTouchUpOutside];
-    //完成
-    [_audioBtn addTarget:self action:@selector(recordFinish:) forControlEvents:UIControlEventTouchUpInside];
+//    [_audioBtn addTarget:self action:@selector(recordCancel:) forControlEvents: UIControlEventTouchDragExit | UIControlEventTouchUpOutside];
+//    //完成
+//    [_audioBtn addTarget:self action:@selector(recordFinish:) forControlEvents:UIControlEventTouchUpInside];
    
 }
 
@@ -280,7 +285,7 @@
 #pragma  语音部分
 - (void)recordStart:(UIButton *)button
 {
-    [button setTitle:@"录制中" forState:UIControlStateNormal];
+//    [button setTitle:@"录制中" forState:UIControlStateNormal];
     NSLog(@"UIControlEventTouchDown---recordStart");
     [self startRecord];
 }
@@ -400,7 +405,7 @@
 - (void)recordCancel:(UIButton *)button
 {
     
-    [self.audioBtn setTitle:@"重新录制" forState:UIControlStateNormal];
+//    [self.audioBtn setTitle:@"重新录制" forState:UIControlStateNormal];
     NSLog(@"UIControlEventTouchDragExit 和 UIControlEventTouchUpOutside---recordCancel");
     
     [self endRecord];
@@ -417,7 +422,7 @@
 - (void)recordFinish:(UIButton *)button
 {
     NSLog(@"UIControlEventTouchUpInside---recordFinish");
-    [button setTitle:@"完成" forState:UIControlStateNormal];
+//    [button setTitle:@"完成" forState:UIControlStateNormal];
    
 }
 

@@ -35,7 +35,7 @@
 - (IBAction)replay:(id)sender {
  
 }
-
+//http://yxtest.xgyuanda.com/Public/upload/re_yuyin/
 -(void)setModel:(AbjcModel *)model{
     if (model) {
         _model = model;
@@ -56,7 +56,11 @@
              [_headerImg sd_setImageWithURL:[NSURL URLWithString:model.u_image]];
             _nameLab.text = model.weixin_name;
             _timeLab.text = model.z_time;
-            
+            if ([model.doc_statu isEqualToString:@"1"]) {
+                _audioBg.hidden = NO;
+            }else{
+                _audioBg.hidden = YES;
+            }
 //            NSString * str = @"比较开始大把附近宽度设备空间分布当升科技发布到数据库部分接口打撒发布的撒部分接口大撒把你放假看电视发迪桑娜复健科打谁那就开发那段时间看风景看电视 范德萨控江路弄发动机昆士兰 发士大夫打扫哪了开发考虑的撒法第三开了房三大";
             _contentLab.text =  model.content;
         }
@@ -111,6 +115,11 @@
         _timeLab.text = modelb.d_time;
         _contentLab.text = modelb.d_content;
         _repalyBtn.hidden = YES;
+        if ([modelb.doc_statu isEqualToString:@"1"]) {
+            _audioBg.hidden = NO;
+        }else{
+            _audioBg.hidden = YES;
+        }
     }
 }
 

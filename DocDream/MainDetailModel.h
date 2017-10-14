@@ -37,7 +37,7 @@
 
 @property (nonatomic,strong) NSString <Optional>* d_images;
 @property (nonatomic,strong) NSString <Optional>* d_doctor;
-
+@property (nonatomic,strong) NSString <Optional>* doc_statu;
 
 @end
 

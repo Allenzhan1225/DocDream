@@ -8,6 +8,7 @@
 
 #import "ReplyVC.h"
 #import <AFNetworking.h>
+#import <UIView+Toast.h>
 @interface ReplyVC ()<UITextViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
@@ -43,12 +44,14 @@
     }else{
         AFHTTPSessionManager * manger = [AFHTTPSessionManager manager];
         manger.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
-        manger.responseSerializer = [AFJSONResponseSerializer serializer];
+        manger.responseSerializer = [AFHTTPResponseSerializer serializer];
         [manger POST:@"http://yxtest.xgyuanda.com/Api/index/doctor_hui" parameters:@{@"iid":[NSNumber numberWithInt:_qustion_id],@"did":[NSNumber numberWithInt:_doc_id],@"doc_statu":@"0",@"doctor":_textView.text} progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 
             NSLog(@"%@",responseObject);
+            [[UIApplication sharedApplication].delegate.window.rootViewController.view makeToast:@"回复成功" duration:2.0 position:CSToastPositionCenter];
+            [self.navigationController popViewControllerAnimated:YES];
 //            if ([dict[@"status"] isEqual:@0]) {
 //                MianVCTableViewController * vc = [[MianVCTableViewController alloc] init];
 //                vc.ID = dict[@"result"];

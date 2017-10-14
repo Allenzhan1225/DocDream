@@ -12,6 +12,7 @@
 #import "lame.h"
 #import <UIView+Toast.h>
 #define kRecordAudioFile @"myRecord.caf"
+#define mp3AudioFile @"mymp3.mp3"
 
 
 @interface AudioRecorderVC ()<AVAudioRecorderDelegate>
@@ -114,6 +115,7 @@
     if (!_audioRecorder) {
         //创建录音文件保存路径
         NSURL *url=[self getSavePath];
+
         //创建录音格式设置
         NSDictionary *setting=[self getAudioSetting];
         //创建录音机
@@ -246,9 +248,9 @@
     
 }
 - (IBAction)uploadAudio:(id)sender {
-     NSURL *mp3Url=[self getSavePath];
+//     NSURL *mp3Url=[self getSavePath];
 //    NSURL *mp3Url =  [NSURL URLWithString:@"自己随便写个音频文件地址"];//本例子是将本地的 .caf 文件上传到服务器上面去
-    
+     NSURL *mp3Url=[NSURL URLWithString:_mp3FilePath];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"image/jpeg", nil];
     NSMutableDictionary *para = @{@"iid":[NSNumber numberWithInt:_qustion_id],@"did":[NSNumber numberWithInt:_doc_id],@"doc_statu":@"1"}.mutableCopy;
@@ -285,11 +287,16 @@
 }
 
 -(void)upload{
-    NSURL *mp3Url=[self getSavePath];
-    //    NSURL *mp3Url =  [NSURL URLWithString:@"自己随便写个音频文件地址"];//本例子是将本地的 .caf 文件上传到服务器上面去
-    
+        //     .caf 文件上传到服务器上面去
+//    NSURL *mp3Url=[self getSavePath];
+    //     .mp3 文件上传到服务器上面去
+    NSLog(@"%@",[self getSavePath]);
+    NSLog(@"%@",_mp3FilePath);
+     NSURL *mp3Url=[NSURL URLWithString:_mp3FilePath];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"image/jpeg", nil];
+
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"image/jpeg",@"text/plain",nil];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     NSMutableDictionary *para = @{@"iid":[NSNumber numberWithInt:_qustion_id],@"did":[NSNumber numberWithInt:_doc_id],@"doc_statu":@"1"}.mutableCopy;
     [manager POST:@"http://yxtest.xgyuanda.com/Api/index/doctor_hui" parameters:para constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
@@ -298,9 +305,11 @@
         /* url      :  本地文件路径
          * name     :  与服务端约定的参数
          * fileName :  自己随便命名的
-         * mimeType :  文件格式类型 [mp3 : application/octer-stream application/octet-stream] [mp4 : video/mp4]
+         * mimeType :  文件格式类型 [mp3 : application/octer-stream application/octet-stream] [mp4 : video/mp4] multipart/form-data
          */
-        [formData appendPartWithFileURL:mp3Url name:@"img" fileName:@"yuyin.mp3" mimeType:@"multipart/form-data" error:nil];
+        NSData * mp3Data = [NSData dataWithContentsOfFile:_mp3FilePath];
+        [formData appendPartWithFileData:mp3Data name:@"img" fileName:@"yuyin.mp3" mimeType:@"application/octer-stream"];
+//        [formData appendPartWithFileURL:mp3Url name:@"img" fileName:@"yuyin.mp3" mimeType:@"application/octer-stream" error:nil];
         
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         
@@ -309,13 +318,19 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSLog(@"上传成功 %@",responseObject);
-        if(![responseObject[@"msg"] isEqualToString:@""]){
-            [self.view makeToast:@"回复成功"
-                        duration:2.0
-                        position:CSToastPositionCenter] ;
-            [self.navigationController popViewControllerAnimated:YES];
-        }
+        
+        NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        NSLog(@"上传成功 %@",dict);
+        [[UIApplication sharedApplication].delegate.window.rootViewController.view makeToast:@"回复成功"
+                                 duration:2.0
+                                 position:CSToastPositionCenter] ;
+        [self.navigationController popViewControllerAnimated:YES];
+//        if(![dict[@"msg"] isEqualToString:@""]){
+//            [[UIApplication sharedApplication].delegate.window.rootViewController.view makeToast:@"回复成功"
+//                        duration:2.0
+//                        position:CSToastPositionCenter] ;
+//            [self.navigationController popViewControllerAnimated:YES];
+//        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"上传失败 %@",error);
     }];
@@ -333,7 +348,10 @@
     //        [fm removeItemAtURL:[NSURL URLWithString:_cafFilePath] error:nil];
         }
     NSString *cafFilePath = wavPath ;
-    NSString *mp3FilePath = [NSString stringWithFormat:@"%@.mp3",[NSString stringWithFormat:@"%@%@",[cafFilePath substringToIndex:cafFilePath.length - 4],[self getTimestamp]]];
+//    NSString *mp3FilePath = [NSString stringWithFormat:@"%@.mp3",[NSString stringWithFormat:@"%@%@",[cafFilePath substringToIndex:cafFilePath.length - 4],[self getTimestamp]]];
+    NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString * mp3FilePath = [NSString stringWithFormat:@"%@/%@.mp3",urlStr,[self getTimestamp]];
+    NSLog(@"mp3filePath == %@",mp3FilePath);
     @try {
         int read, write;
         FILE *pcm = fopen([cafFilePath cStringUsingEncoding:1], "rb");//source 被转换的音频文件位置
@@ -391,6 +409,9 @@
     urlStr=[urlStr stringByAppendingPathComponent:kRecordAudioFile];
     if (_status) {
           _mp3FilePath =  [self audioCAFtoMP3:urlStr];
+        [self.view makeToast:@"正在解码上传"
+                    duration:2.0
+                    position:CSToastPositionCenter] ;
         [self upload];
         
     }
@@ -424,7 +445,9 @@
 }
 - (void)recordCancel:(UIButton *)button
 {
-    
+    [self.view makeToast:@"取消录制"
+                duration:2.0
+                position:CSToastPositionCenter] ;
     [self.audioBtn setTitle:@"重新录制" forState:UIControlStateNormal];
     NSLog(@"UIControlEventTouchDragExit 和 UIControlEventTouchUpOutside---recordCancel");
     

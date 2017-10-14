@@ -32,28 +32,28 @@
                         <constraint firstAttribute="width" constant="269" id="bBy-7u-VDe"/>
                     </constraints>
                 </progressView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPe-xd-D3n">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPe-xd-D3n">
                     <rect key="frame" x="47" y="253" width="31" height="30"/>
                     <state key="normal" title="开始"/>
                     <connections>
                         <action selector="recordClick:" destination="-1" eventType="touchUpInside" id="vhB-kH-PGY"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojm-Ub-LIF">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojm-Ub-LIF">
                     <rect key="frame" x="101" y="253" width="31" height="30"/>
                     <state key="normal" title="暂停"/>
                     <connections>
                         <action selector="pauseClick:" destination="-1" eventType="touchUpInside" id="6EX-lQ-mfx"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-Mu-zDL">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-Mu-zDL">
                     <rect key="frame" x="160" y="253" width="31" height="30"/>
                     <state key="normal" title="恢复"/>
                     <connections>
                         <action selector="resumeClick:" destination="-1" eventType="touchUpInside" id="cWN-u8-PpJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-bT-0au">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-bT-0au">
                     <rect key="frame" x="295" y="253" width="31" height="30"/>
                     <state key="normal" title="停止"/>
                     <connections>
@@ -68,7 +68,7 @@
                         <action selector="play:" destination="-1" eventType="touchUpInside" id="60C-Js-tbZ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8j-AM-nYD">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8j-AM-nYD">
                     <rect key="frame" x="55" y="381" width="31" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="上传"/>
@@ -77,11 +77,14 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOt-my-Ve3">
-                    <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="608" width="375" height="59"/>
+                    <color key="backgroundColor" red="1" green="0.72953800526250989" blue="0.094174406552257506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="Q1a-Oh-OFA"/>
+                        <constraint firstAttribute="height" constant="59" id="Q1a-Oh-OFA"/>
                     </constraints>
-                    <state key="normal" title="录音"/>
+                    <state key="normal" title="录音">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
