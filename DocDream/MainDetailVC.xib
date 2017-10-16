@@ -39,7 +39,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKD-IA-asL">
-                    <rect key="frame" x="188" y="629" width="188" height="38"/>
+                    <rect key="frame" x="188" y="630" width="188" height="37"/>
                     <color key="backgroundColor" red="1" green="0.59572022442791495" blue="0.24700572237722673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="语音回复">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,7 +67,7 @@
                 <constraint firstItem="hLQ-Zg-NcN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Gjz-IW-VBD"/>
                 <constraint firstItem="fKD-IA-asL" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="I38-Dx-i4s"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="pCi-Sm-yKA" secondAttribute="trailing" constant="23" id="Lam-0R-Hoy"/>
-                <constraint firstItem="fKD-IA-asL" firstAttribute="height" secondItem="hLQ-Zg-NcN" secondAttribute="height" constant="1" id="Td1-nS-39S"/>
+                <constraint firstItem="fKD-IA-asL" firstAttribute="height" secondItem="hLQ-Zg-NcN" secondAttribute="height" id="Td1-nS-39S"/>
                 <constraint firstItem="hLQ-Zg-NcN" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="VbC-3c-nf6"/>
                 <constraint firstItem="eDH-lT-kVW" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" constant="-38" id="aAR-9r-p9Q"/>
                 <constraint firstItem="eDH-lT-kVW" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="gMm-IX-5oE"/>

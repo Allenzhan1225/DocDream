@@ -13,10 +13,11 @@
 #import <UIImageView+WebCache.h>
 #import "MainModel.h"
 #import "MainDetailVC.h"
+
 @interface MianVCTableViewController ()
 @property (nonatomic,strong) NSMutableArray * dataSource;
 @property (nonatomic,strong) AFHTTPSessionManager * httpMgr;
-
+@property(nonatomic,assign) BOOL isHeaderRF;
 @end
 
 @implementation MianVCTableViewController
@@ -28,6 +29,15 @@
 
     [self loadData];
     
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _isHeaderRF = YES;
+        [self loadData];
+
+    }];
+//    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+//
+//    }];
+    
 }
 -(void)loadData{
     _httpMgr = [AFHTTPSessionManager manager];
@@ -36,6 +46,11 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSArray * arr =  [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        if(_isHeaderRF){
+            [self.dataSource removeAllObjects];
+        }
+        [self.tableView.mj_header endRefreshing];
+//        [self.tableView.tableFooterView endEditing:YES];
         for (NSDictionary * dict in arr) {
             NSError *  error;
            MainModel * model =  [[MainModel alloc] initWithDictionary:dict error:&error];
