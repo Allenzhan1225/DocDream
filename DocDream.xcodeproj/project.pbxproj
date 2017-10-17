@@ -632,6 +632,7 @@
 					"\"${PODS_ROOT}/Headers/Public\"",
 				);
 				INFOPLIST_FILE = DocDream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Pods/AFNetworking\"/**",
@@ -642,7 +643,7 @@
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/DocDream-gcveaazyjkiyvfglsruwjkxabcma/Build/Products/Debug-iphoneos/JSONModel\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/DocDream-gcveaazyjkiyvfglsruwjkxabcma/Build/Products/Debug-iphoneos/Toast\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "---.DocDream";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixiang.org;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -661,6 +662,7 @@
 					"\"${PODS_ROOT}/Headers/Public\"",
 				);
 				INFOPLIST_FILE = DocDream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Pods/AFNetworking\"/**",
@@ -671,7 +673,7 @@
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/DocDream-gcveaazyjkiyvfglsruwjkxabcma/Build/Products/Debug-iphoneos/JSONModel\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/DocDream-gcveaazyjkiyvfglsruwjkxabcma/Build/Products/Debug-iphoneos/Toast\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "---.DocDream";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yixiang.org;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

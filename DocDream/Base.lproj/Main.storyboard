@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cyg-eE-exq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cyg-eE-exq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +14,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbb-i3-TNU"/>
+                        <viewControllerLayoutGuide type="bottom" id="jea-fG-dVh"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +41,6 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="indicator" destination="DHY-EA-0Cv" id="wRi-n3-rlI"/>
@@ -169,6 +172,10 @@
         <scene sceneID="bd7-xX-c5P">
             <objects>
                 <viewController id="Cyg-eE-exq" customClass="LoginVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mmW-7V-srj"/>
+                        <viewControllerLayoutGuide type="bottom" id="0IT-Ss-ZsV"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vSL-jE-HpN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,11 +258,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pUw-HN-3yw" firstAttribute="centerX" secondItem="vSL-jE-HpN" secondAttribute="centerX" id="3Nw-my-UGY"/>
-                            <constraint firstItem="eCj-kA-pN0" firstAttribute="trailing" secondItem="pUw-HN-3yw" secondAttribute="trailing" constant="33" id="Cks-tS-265"/>
+                            <constraint firstAttribute="trailing" secondItem="pUw-HN-3yw" secondAttribute="trailing" constant="33" id="Cks-tS-265"/>
                             <constraint firstItem="pUw-HN-3yw" firstAttribute="centerY" secondItem="vSL-jE-HpN" secondAttribute="centerY" id="bmE-ZA-gHX"/>
-                            <constraint firstItem="pUw-HN-3yw" firstAttribute="leading" secondItem="eCj-kA-pN0" secondAttribute="leading" constant="32" id="pZX-jX-fLY"/>
+                            <constraint firstItem="pUw-HN-3yw" firstAttribute="leading" secondItem="vSL-jE-HpN" secondAttribute="leading" constant="32" id="pZX-jX-fLY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="eCj-kA-pN0"/>
                     </view>
                     <connections>
                         <outlet property="passTF" destination="giR-51-E5Q" id="VPi-N2-rWK"/>

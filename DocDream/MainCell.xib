@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -75,23 +75,22 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="MgK-Qe-KXH" firstAttribute="leading" secondItem="8jO-bC-Ict" secondAttribute="trailing" constant="8" id="00d-79-VKR"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MgK-Qe-KXH" secondAttribute="trailing" constant="7" id="0US-c6-gKP"/>
+                <constraint firstAttribute="trailing" secondItem="MgK-Qe-KXH" secondAttribute="trailing" constant="7" id="0US-c6-gKP"/>
                 <constraint firstItem="MgK-Qe-KXH" firstAttribute="centerY" secondItem="8jO-bC-Ict" secondAttribute="centerY" id="0wo-9o-fpV"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JYi-Hl-H1o" secondAttribute="trailing" constant="7" id="468-Mj-IV5"/>
+                <constraint firstAttribute="trailing" secondItem="JYi-Hl-H1o" secondAttribute="trailing" constant="7" id="468-Mj-IV5"/>
                 <constraint firstItem="w0b-9C-7IH" firstAttribute="leading" secondItem="pQi-Sb-67R" secondAttribute="trailing" constant="8" id="6HI-75-DYG"/>
-                <constraint firstItem="JYi-Hl-H1o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="9" id="6cC-Zg-hj8"/>
-                <constraint firstItem="uW5-pe-nTv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="11" id="6w3-PF-Qgl"/>
+                <constraint firstItem="JYi-Hl-H1o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="6cC-Zg-hj8"/>
+                <constraint firstItem="uW5-pe-nTv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="6w3-PF-Qgl"/>
                 <constraint firstItem="pQi-Sb-67R" firstAttribute="centerY" secondItem="uW5-pe-nTv" secondAttribute="centerY" id="EtJ-SD-Atc"/>
                 <constraint firstItem="w0b-9C-7IH" firstAttribute="centerY" secondItem="uW5-pe-nTv" secondAttribute="centerY" id="FHx-UR-g9G"/>
                 <constraint firstItem="w0b-9C-7IH" firstAttribute="leading" secondItem="pQi-Sb-67R" secondAttribute="trailing" constant="8" id="Pvn-Pw-qw4"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8jO-bC-Ict" secondAttribute="bottom" constant="11" id="b1G-hB-wu2"/>
+                <constraint firstAttribute="bottom" secondItem="8jO-bC-Ict" secondAttribute="bottom" constant="11" id="b1G-hB-wu2"/>
                 <constraint firstItem="JYi-Hl-H1o" firstAttribute="top" secondItem="uW5-pe-nTv" secondAttribute="bottom" constant="8" id="d0O-Lw-Uq0"/>
                 <constraint firstItem="8jO-bC-Ict" firstAttribute="top" secondItem="JYi-Hl-H1o" secondAttribute="bottom" constant="8" id="iny-AC-NG8"/>
-                <constraint firstItem="uW5-pe-nTv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="7" id="n5M-ll-ovv"/>
+                <constraint firstItem="uW5-pe-nTv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="7" id="n5M-ll-ovv"/>
                 <constraint firstItem="pQi-Sb-67R" firstAttribute="leading" secondItem="uW5-pe-nTv" secondAttribute="trailing" constant="8" id="w17-qu-Klc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="answerStatus" destination="MgK-Qe-KXH" id="K5i-gz-jAj"/>
                 <outlet property="contentLab" destination="JYi-Hl-H1o" id="Qnc-qC-Mg1"/>
