@@ -13,6 +13,7 @@
 #import <UIImageView+WebCache.h>
 #import "MainModel.h"
 #import "MainDetailVC.h"
+#import "ChangePassVC.h"
 
 @interface MianVCTableViewController ()
 @property (nonatomic,strong) NSMutableArray * dataSource;
@@ -32,13 +33,27 @@
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         _isHeaderRF = YES;
         [self loadData];
-
     }];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"修改密码" style:UIBarButtonItemStylePlain target:self action:@selector(changePass:)];
 //    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
 //
 //    }];
     
 }
+
+
+-(void)changePass:(UIBarButtonItem *) item{
+//    NSLog(@"修改密码被点击");
+    ChangePassVC * vc =  [[ChangePassVC alloc] init];
+    vc.ID = self.ID;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+/**
+ 加载数据
+ */
 -(void)loadData{
     _httpMgr = [AFHTTPSessionManager manager];
     _httpMgr.responseSerializer = [AFHTTPResponseSerializer serializer];

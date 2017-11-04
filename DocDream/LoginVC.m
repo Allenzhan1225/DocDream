@@ -22,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _userNameTF.text = @"李强";
-    _passTF.text = @"lq123456";
+//    _userNameTF.text = @"李强";
+//    _passTF.text = @"lq123456";
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
