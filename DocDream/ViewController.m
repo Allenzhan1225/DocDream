@@ -29,12 +29,17 @@
    
     _recordButton.backgroundColor = [UIColor redColor];
     // 开始
+    
+    
     [_recordButton addTarget:self action:@selector(recordStart:) forControlEvents:UIControlEventTouchDown];
     // 取消
     [_recordButton addTarget:self action:@selector(recordCancel:) forControlEvents: UIControlEventTouchDragExit | UIControlEventTouchUpOutside];
     //完成
     [_recordButton addTarget:self action:@selector(recordFinish:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_recordButton];
+    
+    
+    
     _recordButton.layer.cornerRadius = 50;  
 }
 
